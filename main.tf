@@ -1,8 +1,9 @@
 resource "vcd_nsxt_app_port_profile" "nsxt_app_port_profile" {
-  org        = var.vdc_org_name
-  context_id = var.context_id
-  name       = var.name
-  scope      = var.scope
+  org         = var.vdc_org_name
+  context_id  = var.context_id
+  name        = var.name
+  scope       = var.scope
+  description = var.description
 
   dynamic "app_port" {
     for_each = var.app_ports

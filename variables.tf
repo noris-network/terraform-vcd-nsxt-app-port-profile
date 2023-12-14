@@ -21,6 +21,12 @@ variable "scope" {
   default     = "TENANT"
 }
 
+variable "description" {
+  description = "(Optional) An optional description of the Application Port Profile."
+  type        = string
+  default     = null
+}
+
 variable "app_ports" {
   description = "At least one block of Application Port definition."
   type = list(object({
