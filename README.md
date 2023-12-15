@@ -33,7 +33,7 @@ No modules.
 | <a name="input_app_ports"></a> [app\_ports](#input\_app\_ports) | At least one block of Application Port definition. | <pre>list(object({<br>    protocol = string<br>    port     = set(string)<br>  }))</pre> | n/a | yes |
 | <a name="input_name"></a> [name](#input\_name) | A unique name for Port Profile. | `string` | n/a | yes |
 | <a name="input_context_id"></a> [context\_id](#input\_context\_id) | ID of NSX-T Manager, VDC or VDC Group. It accepts VDC, VDC Group or NSX-T Manager ID. | `string` | `null` | no |
-| <a name="input_description"></a> [description](#input\_description) | n/a | `string` | `null` | no |
+| <a name="input_description"></a> [description](#input\_description) | (Optional) An optional description of the Application Port Profile. | `string` | `null` | no |
 | <a name="input_scope"></a> [scope](#input\_scope) | Application Port Profile scope - PROVIDER, TENANT. Default: TENANT | `string` | `"TENANT"` | no |
 | <a name="input_vdc_org_name"></a> [vdc\_org\_name](#input\_vdc\_org\_name) | The name of the organization to use. | `string` | `null` | no |
 
